@@ -59,14 +59,14 @@
         }
           static Children[] ChildSortZA(Children[] children)
           {
-            Children[] arr = children;
-            arr = arr.OrderByDescending(child => child.SureName).ToArray();
+            Children[] arr = children.OrderByDescending(child => child.SureName).ToArray();
+            
             return arr;
         }
           static Children[] ChildSortAZ(Children[] children)
           {
-            Children[] arr = children;
-            arr = arr.OrderBy(child => child.SureName).ToArray();
+            Children[] arr = children.OrderBy(child => child.SureName).ToArray();
+            
             return arr;
           }
         
